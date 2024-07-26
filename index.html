@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+      <!--=============== FONTAWSOME ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="css/style.css">
+      
+                
+
+      <title>SYNC</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="img/Untitled-2.png" class="logo">
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link ">
+                            <i class="fa-solid fa-house"></i>
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link ">
+                            <i class="fa-solid fa-address-card"></i>
+                            <span>Featured</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#discount" class="nav__link">
+                            <i class="fa-solid fa-tag"></i>
+                            <span>Discount</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>New Card</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Testimonial</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <i class="fa-solid fa-magnifying-glass search-button" id="search-button"></i>
+                <i class="fa-solid fa-user login-button" id="login-button"></i>
+                <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+         <form action="" class="search__form">
+            <i class="fa-solid fa-magnifying-glass serch__icon"></i>
+            <input type="search" placeholder="what are you looking for" class="search__input">
+         </form>
+         <i class="fa-solid fa-xmark search__close" id="search__close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+        <form action="" class="login__form grid">
+            <h3 class="login__title">log in</h3>
+            <div class="login__group grid">
+              <div>
+                <label for="login__email" class="login__label">Email</label>
+                <input type="email" placeholder="Write your email" id="login__email" class="login__input">
+              </div>
+              <div>
+                <label for="login__pass" class="login__label">Password</label>
+                <input type="password" placeholder="Enter your Password" id="login__pass" class="login__input">
+              </div>
+            </div>
+            <div>
+                <span class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </span>
+                <a href="#" class="login__forget">
+                    You forget your password
+                </a>
+                <button type="submit" class="login__button button">Log in</button>
+            </div>
+        </form>
+        <i class="fa-solid fa-xmark login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">Browse &<br> select NFC Card</h1>
+                    <p class="home__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestias neque aperiam enim blanditiis, quia dolores, hic veritatis, impedit totam consequatur. Maxime quaerat sapiente et corrupti minus reiciendis aspernatur voluptas.
+                    </p>
+                    <a href="#" class="button">Explore Now</a>
+                </div>
+                <div class="home__images">
+                    <div class="home__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home__article swiper-slide">
+                                <img src="img/1.png" alt="image" class="home__img">
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <img src="img/2.png" alt="image" class="home__img">
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <img src="img/3.png" alt="image" class="home__img">
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <img src="img/card2.png" alt="image" class="home__img">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <div class="services__container container grid" >
+                <article class="services__card">
+                    <i class="fa-solid fa-truck"></i>
+                    <h3 class="services__title">Free Shipping</h3>
+                    <p class="services__description">Order More Than $100</p>
+                </article>
+                <article class="services__card">
+                    <i class="fa-solid fa-lock"></i>
+                    <h3 class="services__title">Secure Payment</h3>
+                    <p class="services__description">100% Secure Payment</p>
+                </article>
+                <article class="services__card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3 class="services__title">24/7 Support</h3>
+                    <p class="services__description">Call us any time</p>
+                </article>
+            </div>
+         </section>
+
+         <!--==================== FEATURED ====================-->
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+                Featured Cards
+            </h2>
+            <div class="featured__container container">
+                <div class="featured__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/1.png" class="featured__img">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/2.png" class="featured__img">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/3.png" class="featured__img">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/card2.png" class="featured__img">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/5.png" class="featured__img a7a">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/6.png" class="featured__img a7a">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/7.png" class="featured__img a7a">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/8.png" class="featured__img a7a">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/9.png" class="featured__img a7a">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide ">
+                            <img src="img/10.png" class="featured__img a7a">
+                            <h2 class="featured__title">Featured Card</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$10</span>
+                                <span class="featured__price">$15</span>
+                            </div>
+                            <button class="button">Add to cart</button>
+                            <div class="featured__actions">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-heart"></i></button>
+                                <button><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+         </section>
+         <!--Video enimation-->
+        
+
+         <!--==================== DISCOUNT ====================-->
+         <section class="discount section" id="discount">
+            <div class="discount__container container grid">
+                <div class="discount__data">
+                    <h2 class="discount__title section__title">
+                        Up To 50% Discount
+                    </h2>
+                    <p class="discount__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit porro sunt delectus fugit esse? A minima animi labore perspiciatis! Odio voluptatum vel at quae itaque sunt perferendis, odit eum perspiciatis?
+                    </p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+                <div class="discount__images">
+                    <img src="img/gold.png" alt="" class="discount__img-1">
+                    <img src="img/silver card.png" alt="" class="discount__img-2">
+                </div>
+            </div>
+         </section>
+
+         <!--==================== NEW  ====================-->
+         <section class="new section" id="new">
+            <h2 class="section__title">
+                New Items
+            </h2>
+            <div class="new__container container">
+                <div class="new__swiper swiper">
+                     <div class="swiper-wrapper">
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/1.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/2.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/3.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/5.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/6.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/7.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/8.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/9.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/gold.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/card2.png" alt="image" class="new__img">
+                            <div>
+                                <h2 class="new__title">New Card</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">$8</span>
+                                    <span class="new__price">$12</span>
+                                </div>
+                                <div class="new__stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </a>
+                     </div>
+                </div>
+                <!---->
+                
+         </section>
+
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            <div class="join__container">
+              <img src="img/df.jpg" alt="" class="join__bg">
+             
+              
+                <div class="join__data container grid">
+                    <h2  class="join__title section__title">
+                        Subscribe To Recive<br>
+                        The Latest Updates
+                    </h2>
+                    <form action="" class="join__form">
+                        <input type="email" placeholder="Enter email" class="join__input">
+                        <button type="submit" class="join__button button">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+         </section>
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section" id="testimonial">
+            <h2 class="section__title">
+                Customer Opinions
+            </h2>
+            <div class="op__container container">
+                <div class="op__swiper swiper"> 
+                    <div class="swiper-wrapper">
+                        <article class="op__card swiper-slide">
+                         <img src="img/testimonial-perfil-1.png" alt="image" class="op__img">
+                         <h2 class="op__title">Rial loz</h2>
+                         <p class="op__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem magni mollitia quis dolorum itaque atque voluptatibus 
+                         </p>
+                         <div class="op__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                         </div>
+                        </article>
+                        <article class="op__card swiper-slide">
+                            <img src="img/testimonial-perfil-2.png" alt="image" class="op__img">
+                            <h2 class="op__title">Rial loz</h2>
+                            <p class="op__description">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem magni mollitia quis dolorum itaque atque vo
+                            </p>
+                            <div class="op__stars">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star-half"></i>
+                            </div>
+                           </article>
+                           <article class="op__card swiper-slide">
+                            <img src="img/testimonial-perfil-3.png" alt="image" class="op__img">
+                            <h2 class="op__title">Rial loz</h2>
+                            <p class="op__description">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem magni mollitia quis dolorum itaque atque voluptatibus
+                            </p>
+                            <div class="op__stars">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star-half"></i>
+                            </div>
+                           </article>
+                           <article class="op__card swiper-slide">
+                            <img src="img/testimonial-perfil-4.png" alt="image" class="op__img">
+                            <h2 class="op__title">Rial loz</h2>
+                            <p class="op__description">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quidem magni mollitia quis dolorum itaque atque voluptatibus 
+                            </p>
+                            <div class="op__stars">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star-half"></i>
+                            </div>
+                           </article>
+                    </div>
+                </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <i class="fa-solid fa-address-card"></i>NFC CARD 
+                </a>
+                <p class="footer__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quis ut,<br> voluptatem quae adipisci illum. Eaque, numquam? Autem dolore corrupti similique ipsum, 
+                </p>
+            </div>
+            <div class="footer__data grid">
+                  <div>
+                    <h3 class="footer__title">About</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Awards</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Terms of services</a>
+                        </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Community</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Our team</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Help center</a>
+                        </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <address class="footer__info">
+                                cairo<br>
+                                egypt
+                            </address>
+                        </li>
+                        <li>
+                            <address class="footer__info">
+                                ALX<br>
+                                egypt
+                            </address>
+                        </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="footer__title">Social</h3>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                   
+                  </div>
+            </div>
+         </div>
+         <span class="footer__copy">
+             &#169; All Rihts Reserved by Rasio Team
+         </span>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up"><i class="fa-solid fa-arrow-up"></i></a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="js/scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="js/main.js"></script>
+   </body>
+</html>
